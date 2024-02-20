@@ -1,0 +1,314 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.8em;
+}
+:root {
+  --Cyan: hsl(180, 66%, 49%);
+  --DarkViolet: hsl(257, 27%, 26%);
+  --Red: hsl(0, 78%, 95%);
+  --Gray: hsl(0, 0%, 75%);
+  --GrayishViolet: hsl(257, 7%, 63%);
+  --VeryDarkBlue: hsl(255, 11%, 22%);
+  --VeryDarkViolet: hsl(260, 8%, 14%);
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("./images/illustration-working.svg") no-repeat 44em 12em / 50em;
+}
+
+/* NAV STYLING TOOK ME ALOT OF TIME */
+nav{
+    display: flex;
+    cursor: default;
+}
+.mobile-icon{
+    display: none;
+}
+ul{
+    display: inline-flex;
+    color: var(--GrayishViolet);
+}
+ .acc-btns{
+    display: flex;
+    margin-left: 28em;
+    gap: 2em;
+} 
+li{
+    list-style: none;
+    font-weight: 600;
+}
+input[type="submit"]{
+    color: var(--GrayishViolet);
+    background-color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+#SignBtn, #getStarted{
+    color: #eeffff;
+    height: 2.8em;
+    width: 7em;
+    border-radius: 39px;
+    background-color: var(--Cyan);
+}
+/* NAV STYLING TOOK ME ALOT OF TIME */
+.set-bio{
+    padding-left: 2.5em;
+bottom: -7em;
+}
+.set-bio, .webSpeech article, .dropDowns section{
+  position: absolute;
+}
+.webSpeech, .dropDowns,  #state-btn1,  #output1,.output1-cont{
+  position: relative;
+ }
+.webSpeech article{ right: 18em;}
+.web-intro h1{
+    line-height: 1.1em;
+font-size: 4.6em;
+font-weight: 900;
+width: 13em;
+}
+.web-intro p{
+width: 25em;
+line-height: 1.7em;
+font-size: 1.5em;
+color: var(--GrayishViolet)
+}
+#getStarted{
+    height: 3.5em;
+    width: 11em;
+    margin: 1em 0 0 1em;
+} 
+    /* URL Side */
+    .url-shorter {
+      margin: 34em 3em;
+    }
+    .url-shorter {
+      height: 10em;
+      background-image: url("./images/bg-shorten-desktop.svg"), linear-gradient(#232127, #232127);
+      background-position: center;
+      background-size: 100% auto;
+      border-radius: 9px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  #linkShorter{
+    width: 40em;
+    padding: 1em;
+    color: var(--GrayishViolet);
+    text-indent: 1em;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1.2em;
+  }
+  button, #state-btn1{
+    margin-left:2em ;
+    border-radius: 8px;
+    font-size: 1.2em;
+    height: 3.2em;
+    border: none;
+    width: 10em;
+    color: #fff;
+    font-weight: 600;
+    background-color: var(--Cyan);
+  }
+   /* URL Side */
+   /* Links output */
+   
+   .dropDowns section{
+    background-color: #f0f1f6;
+    height: 30em;
+    width: 100%;
+    bottom: 11em;
+    z-index: -1; 
+    
+   }
+  .output1-cont{
+    margin: 0em 3em;
+    margin-top: 6em;
+    background-color: #fff;
+   }
+.output1-cont, .outinput1-hold{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 90%;
+   height: 5em;
+   border-radius: 3px;
+   }
+     #state-btn1{
+    left: 7em;
+    margin:0;
+    font-size: 1em;
+    height: 2.8em;
+    width: 8em;
+   }
+  #output1{left: 13em;}
+ #output1 a,   #input1 a{
+  font-size: 1.4em;
+  text-decoration: none;
+  width: 100%;
+ }
+#output1 a{color: var(--Cyan);}
+  #input1 a{color: var(--VeryDarkBlue);} 
+
+@media(max-width: 420px){
+    body{
+        background-position-y: 8em;
+background-size: 33em;
+background-position-x: 1rem;
+    }
+/* NAV STYLING TOOK ME ALOT OF TIME */
+    nav,  .mobile-icon{
+        display: block;
+    }
+   .mobile-cont, .webspeech-cont, .set-bio { 
+    position: relative;
+  }
+    .mobile-icon{
+        position: absolute;
+        left: 15em;
+        bottom: 1em;
+    }
+    .fa-bars{  
+      font-size: 2em; 
+      color:  var(--GrayishViolet);
+    }
+    .acc-btns,  #mobile-blue, #logBtn{
+        background-color: var(--DarkViolet);
+        color: #fff;
+        font-size: 18px;
+    }
+    #mobile-blue{ border-radius: 7px 7px 0 0;}
+    .acc-btns{
+      border-radius: 0 0 7px 7px;
+    }
+   ul, .acc-btns, .signn{
+    justify-content: center;
+    align-items: center;
+    display: block;
+    text-align: center;
+   }
+   .acc-btns{
+    margin-left: 0em;
+    gap: 2em;
+  }
+  #SignBtn{  width: 13em;}
+  .mobile-cont{
+    border-radius: 7px;
+  }
+  .webspeech-cont{ 
+  bottom: 6em;
+}
+  .webSpeech, .webSpeech article{
+    right: 0em;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .web-intro h1{
+    text-align: center;
+font-size: 2.5em;
+width: 10em;
+}
+.web-intro p{
+  width: 17em;
+  line-height: 1.5em;
+text-align: center;
+  font-size: 1.2em;
+  }
+  .set-bio{
+    padding-left: 2.5em;
+bottom: 2em;
+}
+.getBtn{
+  position: absolute;
+  left: 6em;
+}
+/* URL Shorter */
+.url-shorter {
+  margin: -4em 1em;
+}
+.url-shorter{
+  height: 13em;
+  background-image: url("./images/bg-shorten-mobile.svg"), linear-gradient( #232127, #232127);
+  display: block;
+}
+#linkShorter{
+  width: 12.4em;
+  padding: 0.8em;
+  text-indent: 0.5em;
+  border-radius: 5px;
+}
+button{
+  margin-left:0em;
+  margin-top: 2.2em;
+  border-radius: 5px;
+  width: 12.5em;
+}
+
+.dropDowns{
+  position: relative;
+ }
+ 
+/* LINK SIDE */
+.link-outputs{
+  top:0em;
+  right: 0;
+  left: 0;
+    height: 30em;
+    background-color: #f0f1f6;
+    position: absolute;
+    bottom: 11em;
+    z-index: -1; 
+  }
+  
+  .output1-cont{
+    right: 0em;
+    left: 0;
+    width: 18.3em;
+    top: 4em;
+    margin: 0;
+    height: 11em;
+  }
+  .outinput1-hold {
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: block;  
+    position: absolute; 
+    right: 3em;
+    top: -1em;
+  }
+  
+  #input1, #output1{
+    width: 19.7em;
+  }
+  #input1{
+    border-bottom: 1.5px solid #f0f1f6;
+  }
+  .copyBtn-hold{
+    margin-left: 1em;
+  }
+  #state-btn1{
+    position: static;
+    right: 0;
+    left: 0;
+    margin:0;
+    font-size: 1em;
+    height: 2.5em;
+    width: 16em;
+   }
+   #output1,   #input1{
+    position:static;
+    left:0;
+   }
+   #input1 a{
+    font-size: 1.2em;
+   } 
+  }
